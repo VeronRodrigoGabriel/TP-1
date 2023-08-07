@@ -1,11 +1,10 @@
 import express from 'express';
 import morgan from 'morgan';
-import { posts } from './src/posts.js';
+import { posts } from './public/js/posts.js';
 
 const app = express();
 
 app.use(morgan('dev'));
-
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));

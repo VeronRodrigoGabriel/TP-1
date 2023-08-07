@@ -9,6 +9,15 @@
     <h1><%= title %></h1>
     
     <!-- Mostrar los posts aquí -->
-
+    <div><% posts.map(post => { %>
+        <div>
+            <p><%= post.id %></p>
+            <p><%= post.title %></p>
+            <p><%= post.description %></p>
+            <p><%= post.author %></p>
+        </div>
+    <%}) %></div>
+  
 </body>
+<script src="/public/js/posts.js"></script>
 </html>
